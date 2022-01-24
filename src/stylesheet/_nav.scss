@@ -1,0 +1,41 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  background-color: #8a2a2b;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  .nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px 20px 10px 40px;
+
+    li {
+      margin-right: 20px;
+      font-size: 20px;
+      padding: 8px;
+      &.active {
+        border-bottom: 2px solid white;
+        &:hover {
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+      }
+      &.in-active {
+        border-bottom: 2px solid transparent;
+      }
+      &:hover {
+        background-color: #870607;
+        border-radius: 6px;
+        a {
+          color: white;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
